@@ -9,7 +9,7 @@ export default class Step extends Component {
 
   getStyles() {
     const {
-      activeColor, completeColor, defaultColor, circleFontColor,
+      activeColor, completeColor, defaultColor, defaultCircleFontColor, activeCircleFontColor, completeCircleFontColor,
       activeTitleColor, completeTitleColor, defaultTitleColor,
       size, circleFontSize, titleFontSize,
       circleTop, titleTop, width, completeOpacity, activeOpacity, defaultOpacity,
@@ -34,7 +34,7 @@ export default class Step extends Component {
         textAlign: 'center',
         padding: 1,
         fontSize: circleFontSize,
-        color: circleFontColor,
+        color: defaultCircleFontColor,
         display: 'block',
         opacity: defaultOpacity,
         borderWidth: (defaultBorderColor ? defaultBorderWidth : 0),
@@ -47,6 +47,7 @@ export default class Step extends Component {
         borderWidth: (activeBorderColor ? defaultBorderWidth : 0),
         borderColor: activeBorderColor,
         borderStyle: activeBorderStyle,
+        color: activeCircleFontColor,
       },
       completedCircle: {
         backgroundColor: completeColor,
@@ -54,6 +55,7 @@ export default class Step extends Component {
         borderWidth: (completeBorderColor ? defaultBorderWidth : 0),
         borderColor: completeBorderColor,
         borderStyle: completeBorderStyle,
+        color: completeCircleFontColor,
       },
       index: {
         lineHeight: `${size + circleFontSize / 4}px`,
@@ -156,7 +158,9 @@ Step.defaultProps = {
   activeTitleColor: '#000',
   completeTitleColor: '#000',
   defaultTitleColor: '#757575',
-  circleFontColor: '#FFF',
+  defaultCircleFontColor: '#FFF',
+  activeCircleFontColor: '#000',
+  completeCircleFontColor: '#E0E0E0',
   size: 32,
   circleFontSize: 16,
   titleFontSize: 16,
@@ -177,7 +181,9 @@ Step.propTypes = {
   activeTitleColor: PropTypes.string,
   completeTitleColor: PropTypes.string,
   defaultTitleColor: PropTypes.string,
-  circleFontColor: PropTypes.string,
+  defaultCircleFontColor: PropTypes.PropTypes.string,
+  activeCircleFontColor: PropTypes.PropTypes.string,
+  completeCircleFontColor: PropTypes.PropTypes.string,
   size: PropTypes.number,
   circleFontSize: PropTypes.number,
   titleFontSize: PropTypes.number,
