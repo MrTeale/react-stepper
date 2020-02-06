@@ -36,7 +36,9 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 |activeTitleColor|Active title color|#000|string|
 |completeTitleColor|Completed title color|#000|string|
 |defaultTitleColor|Default title color - not active or completed|#757575|string|
-|circleFontColor|Circle text color (for index)|#FFF|string|
+|defaultCircleFontColor|Default Circle text color - not active or completed|#FFF|string|
+|activeCircleFontColor|Active circle text color|#000|string|
+|completedCircleFontColor|Completed circle text color|#E0E0E0|string|
 |size|Circle size|32|number|
 |circleFontSize|Circle text size|16|number|
 |titleFontSize|Title text size|16|number|
@@ -71,7 +73,7 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 
 ## Author
 
-InJung Chung / [@mu29](http://mu29.github.io/)
+Lachlan Teale / [@mrteale](https://lachlanteale.com)
 
 ## License
 

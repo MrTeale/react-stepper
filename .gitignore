@@ -4,3 +4,4 @@ example/bundle*
 npm-debug.log
 
 .idea
+package-lock.json

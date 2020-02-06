@@ -18,7 +18,7 @@ const styles = {
 
 function Stepper({
   activeStep, steps, disabledSteps,
-  activeColor, completeColor, defaultColor, circleFontColor,
+  activeColor, completeColor, defaultColor, defaultCircleFontColor, activeCircleFontColor, completeCircleFontColor,
   activeTitleColor, completeTitleColor, defaultTitleColor,
   size, circleFontSize, titleFontSize,
   circleTop, titleTop, completeOpacity, activeOpacity, defaultOpacity,
@@ -45,7 +45,9 @@ function Stepper({
             activeColor={activeColor}
             completeColor={completeColor}
             defaultColor={defaultColor}
-            circleFontColor={circleFontColor}
+            defaultCircleFontColor={defaultCircleFontColor}
+            activeCircleFontColor={activeCircleFontColor}
+            completeCircleFontColor={completeCircleFontColor}
             activeTitleColor={activeTitleColor}
             completeTitleColor={completeTitleColor}
             defaultTitleColor={defaultTitleColor}
@@ -91,7 +93,9 @@ Stepper.propTypes = {
   activeTitleColor: PropTypes.string,
   completeTitleColor: PropTypes.string,
   defaultTitleColor: PropTypes.string,
-  circleFontColor: PropTypes.string,
+  defaultCircleFontColor: PropTypes.string,
+  activeCircleFontColor: PropTypes.string,
+  completeCircleFontColor: PropTypes.string,
   size: PropTypes.number,
   circleFontSize: PropTypes.number,
   titleFontSize: PropTypes.number,
