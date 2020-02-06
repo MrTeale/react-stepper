@@ -15,7 +15,8 @@ export default class Step extends Component {
       circleTop, titleTop, width, completeOpacity, activeOpacity, defaultOpacity,
       completeTitleOpacity, activeTitleOpacity, defaultTitleOpacity, barStyle, defaultBarColor,
       completeBarColor, defaultBorderColor, completeBorderColor, activeBorderColor,
-      defaultBorderStyle,completeBorderStyle, activeBorderStyle, lineMarginOffset, defaultBorderWidth
+      defaultBorderStyle,completeBorderStyle, activeBorderStyle, lineMarginOffset, defaultBorderWidth,
+      circleLineHeight
     } = this.props;
 
     return {
@@ -58,7 +59,7 @@ export default class Step extends Component {
         color: completeCircleFontColor,
       },
       index: {
-        lineHeight: `${size + circleFontSize / 4}px`,
+        lineHeight: `${circleLineHeight || (size + circleFontSize)}px`,
         color: circleFontColor
       },
       title: {
@@ -186,6 +187,7 @@ Step.propTypes = {
   completeCircleFontColor: PropTypes.PropTypes.string,
   size: PropTypes.number,
   circleFontSize: PropTypes.number,
+  circleLineHeight: PropTypes.number,
   titleFontSize: PropTypes.number,
   circleTop: PropTypes.number,
   titleTop: PropTypes.number,
