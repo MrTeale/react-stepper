@@ -1,5 +1,5 @@
 {
-  "name": "react-stepper-horizontal",
+  "name": "better-react-stepper-horizontal",
   "version": "1.0.12",
   "description": "Well-designed stepper component for react",
   "main": "lib/index.js",

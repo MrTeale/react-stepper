@@ -73,7 +73,7 @@ See full example [here](https://github.com/mu29/react-stepper/blob/master/exampl
 
 ## Author
 
-InJung Chung / [@mu29](http://mu29.github.io/)
+Lachlan Teale / [@mrteale](https://lachlanteale.com)
 
 ## License
 
